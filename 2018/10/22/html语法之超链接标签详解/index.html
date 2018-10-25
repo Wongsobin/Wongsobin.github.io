@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="HTML  标签##实例指向w3cshchool的超级链接1&amp;lt;a href=&amp;quot;http://www.w3school.com.cn&amp;quot;&amp;gt;W3School&amp;lt;/a&amp;gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="html语法之超链接标签详解">
+<meta property="og:url" content="http://yoursite.com/2018/10/22/html语法之超链接标签详解/index.html">
+<meta property="og:site_name" content="汪守斌的学习笔记">
+<meta property="og:description" content="HTML  标签##实例指向w3cshchool的超级链接1&amp;lt;a href=&amp;quot;http://www.w3school.com.cn&amp;quot;&amp;gt;W3School&amp;lt;/a&amp;gt;">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-10-23T15:04:42.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="html语法之超链接标签详解">
+<meta name="twitter:description" content="HTML  标签##实例指向w3cshchool的超级链接1&amp;lt;a href=&amp;quot;http://www.w3school.com.cn&amp;quot;&amp;gt;W3School&amp;lt;/a&amp;gt;">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/10/22/html语法之超链接标签详解/"/>
+
+
+
+
+
+  <title>html语法之超链接标签详解 | 汪守斌的学习笔记</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">汪守斌的学习笔记</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/22/html语法之超链接标签详解/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Sobin Wong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="汪守斌的学习笔记">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">html语法之超链接标签详解</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-22T15:15:57+08:00">
+                2018-10-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="HTML-标签"><a href="#HTML-标签" class="headerlink" title="HTML  标签"></a>HTML <a> 标签</a></h1><p>##实例<br><strong>指向w3cshchool的超级链接</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;http://www.w3school.com.cn&quot;&gt;W3School&lt;/a&gt;</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<h2 id="定义和用法"><a href="#定义和用法" class="headerlink" title="定义和用法"></a>定义和用法</h2><p><strong><a> 标签定义超链接，用于从一张页面链接到另一张页面。</a></strong><br><strong><a> 元素最重要的属性是 href 属性，它指示链接的目标。</a></strong><br>在所有浏览器中，链接的默认外观是：<br>未被访问的链接带有下划线而且是蓝色的<br>已被访问的链接带有下划线而且是紫色的<br>活动链接带有下划线而且是红色的<br><em>提示：您可能已经注意到了，W3School 站点内的链接外观与默认的链接外观非常不同。您可以使用 CSS 伪类 向文本超链接添加复杂而多样的样式。</em></p>
+<hr>
+<h2 id="术语解释-什么是超文本"><a href="#术语解释-什么是超文本" class="headerlink" title="术语解释:什么是超文本"></a>术语解释:什么是超文本</h2><p><strong>标记语言的真正威力在于其收集能力，它可以将收集来的文档组合成一个完整的信息库，并且可以将文档库与世界上的其他文档集合链接起来。</strong></p>
+<p><strong>这样的话，读者不仅可以完全控制文档在屏幕上的显示，还可以通过超链接来控制浏览信息的顺序。这就是 HTML 和 XHTML 中的 “HT” - 超文本（hypertext），就是它将整个 Web 网络连接起来。</strong></p>
+<h2 id="超文本的基础知识"><a href="#超文本的基础知识" class="headerlink" title="超文本的基础知识"></a>超文本的基础知识</h2><p>超文本的基本特征就是可以超链接文档；你可以指向其他位置，该位置可以在当前的文档中、局域网中的其他文档，也可以在因特网上的任何位置的文档中。这些文档组成了一个杂乱的信息网。目标文档通常与其来源有某些关联，并且丰富了来源；来源中的链接元素则将这种关系传递给浏览者。</p>
+<p>超链接可以用于各种效果。超链接可以用在目录和主题列表中。浏览者可以在浏览器屏幕上单击鼠标或在键盘上按下按键，从而选择并自动跳转到文档中自己感兴趣的那个主题，或跳转到世界上某处完全不同的集合中的某个文档。</p>
+<p>超链接还可以向浏览者指出有关文档中某个主题的更多信息。例如，“如果您想了解更详细的信息，请参阅某某页面。”。作者可以使用超链接来减少重复信息。例如，我们建议创作者在每个文档中都签署上自己的姓名。这样就可以使用一个将名字和另一个包含地址、电话号码等信息的单独文档链接起来的超链接，而不必在每个文档中都包含完整的联系信息。</p>
+<p>超链接（hyper text），或者按照标准叫法称为锚（anchor），是使用 <a> 标签标记的，可以用两种方式表示。锚的一种类型是在文档中创建一个热点，当用户激活或选中（通常是使用鼠标）这个热点时，会导致浏览器进行链接。浏览器会自动加载并显示同一文档或其他文档中的某个部分，或触发某些与因特网服务相关的操作，例如发送电子邮件或下载特殊文件等。锚的另一种类型会在文档中创建一个标记，该标记可以被超链接引用。</a></p>
+<p>还有一些与超链接相关联的鼠标相关事件。这些事件与 JavaScript 结合使用可以产生一些令人激动的效果。</p>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p>锚的这两种类型都使用同样的标签；也许这就是它们拥有同样的名称的原因。但是我们发现，如果将它们区分开，把提供热点和超链接地址的锚看作“链接”，而用于标记文档的目标部分的锚称为“锚”，那么您将更容易理解这两种类型的锚。</p>
+<hr>
+<h2 id="创建超链接"><a href="#创建超链接" class="headerlink" title="创建超链接"></a>创建超链接</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">&lt;a href=&quot;/index.html&quot;&gt;本文本&lt;/a&gt; 是一个指向本网站中的一个页面的链接。&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;&lt;a href=&quot;http://www.microsoft.com/&quot;&gt;本文本&lt;/a&gt; 是一个指向万维网上的页面的链接。&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>显示结果<br>› 本文本 是一个指向本网站中的一个页面的链接。<br>› 本文本 是一个指向万维网上的页面的链接。</p>
+<h2 id="链接到同一个页面的不同位置"><a href="#链接到同一个页面的不同位置" class="headerlink" title="链接到同一个页面的不同位置"></a>链接到同一个页面的不同位置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">&lt;a href=&quot;#C4&quot;&gt;查看 Chapter 4。&lt;/a&gt;</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;Chapter 1&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;Chapter 2&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;Chapter 3&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;&lt;a name=&quot;C4&quot;&gt;Chapter 4&lt;/a&gt;&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;Chapter 5&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;Chapter 6&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;Chapter 7&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;Chapter 8&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;Chapter 9&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;Chapter 10&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;Chapter 11&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;Chapter 12&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;Chapter 13&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;Chapter 14&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;Chapter 15&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;Chapter 16&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;Chapter 17&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;This chapter explains ba bla bla&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="设置链接在新浏览器中打开"><a href="#设置链接在新浏览器中打开" class="headerlink" title="设置链接在新浏览器中打开"></a>设置链接在新浏览器中打开</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;a href=&quot;http://www.w3school.com.cn/&quot; target=&quot;_blank&quot;&gt;Visit W3School!&lt;/a&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;如果把链接的 target 属性设置为 &quot;_blank&quot;，该链接会在新窗口中打开。&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="创建电子邮件（只带主题）"><a href="#创建电子邮件（只带主题）" class="headerlink" title="创建电子邮件（只带主题）"></a>创建电子邮件（只带主题）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">这是邮件链接：</span><br><span class="line">&lt;a href=&quot;mailto:someone@microsoft.com?subject=Hello%20again&quot;&gt;发送邮件&lt;/a&gt;</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">&lt;b&gt;注意：&lt;/b&gt;应该使用 %20 来替换单词之间的空格，这样浏览器就可以正确地显示文本了。</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="创建电子邮件（带抄送、密送、邮件主题、邮件内容）"><a href="#创建电子邮件（带抄送、密送、邮件主题、邮件内容）" class="headerlink" title="创建电子邮件（带抄送、密送、邮件主题、邮件内容）"></a>创建电子邮件（带抄送、密送、邮件主题、邮件内容）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">这是邮件链接：</span><br><span class="line">&lt;a href=&quot;mailto:someone@microsoft.com?subject=Hello%20again&quot;&gt;发送邮件&lt;/a&gt;</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">&lt;b&gt;注意：&lt;/b&gt;应该使用 %20 来替换单词之间的空格，这样浏览器就可以正确地显示文本了。</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/25/ME的语法之表格与制图/" rel="next" title="ME的语法之表格与制图">
+                <i class="fa fa-chevron-left"></i> ME的语法之表格与制图
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/25/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Sobin Wong</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML-标签"><span class="nav-number">1.</span> <span class="nav-text">HTML  标签</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义和用法"><span class="nav-number">1.1.</span> <span class="nav-text">定义和用法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#术语解释-什么是超文本"><span class="nav-number">1.2.</span> <span class="nav-text">术语解释:什么是超文本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#超文本的基础知识"><span class="nav-number">1.3.</span> <span class="nav-text">超文本的基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注释"><span class="nav-number">1.4.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建超链接"><span class="nav-number">1.5.</span> <span class="nav-text">创建超链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#链接到同一个页面的不同位置"><span class="nav-number">1.6.</span> <span class="nav-text">链接到同一个页面的不同位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置链接在新浏览器中打开"><span class="nav-number">1.7.</span> <span class="nav-text">设置链接在新浏览器中打开</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建电子邮件（只带主题）"><span class="nav-number">1.8.</span> <span class="nav-text">创建电子邮件（只带主题）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建电子邮件（带抄送、密送、邮件主题、邮件内容）"><span class="nav-number">1.9.</span> <span class="nav-text">创建电子邮件（带抄送、密送、邮件主题、邮件内容）</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Sobin Wong</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
