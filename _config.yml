@@ -4,16 +4,16 @@
 
 # Site
 title: Sobin wang's Notes
-subtitle: sobin.cn
-description: "Sobin的个人站，主要涉及前端知识共享、教程收录、学习、备课笔记、随笔等方面"
+subtitle: "个人站，涉及前端知识共享、学习、备课笔记、随笔等"
+description: 
 keywords: 网页前端 教程 笔记 随笔
 author: Sobin Wang
-language: en
+language: zh-Hans
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://www.sobin.cn
 root: /
 permalink: :title/
 permalink_defaults:
@@ -83,3 +83,10 @@ deploy:
   type: git
   repository: git@github.com:Wongsobin/Wongsobin.github.io.git
   branch: master
+
+feed: # RSS订阅插件
+  type: atom
+  path: atom.xml
+  limit: 0
+
+plugins: hexo-generate-feed
