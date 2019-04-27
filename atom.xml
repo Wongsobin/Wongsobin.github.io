@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.sobin.cn/"/>
-  <updated>2019-04-12T10:22:20.374Z</updated>
+  <updated>2019-04-12T10:38:14.213Z</updated>
   <id>http://www.sobin.cn/</id>
   
   <author>
@@ -21,9 +21,16 @@
     <link href="http://www.sobin.cn/Javascript%E9%97%AD%E5%8C%85%E7%9A%84%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3/"/>
     <id>http://www.sobin.cn/Javascript闭包的深入理解/</id>
     <published>2019-04-12T07:19:54.000Z</published>
-    <updated>2019-04-12T10:22:20.374Z</updated>
+    <updated>2019-04-12T10:38:14.213Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="什么是闭包？（含义较多，较难理解）。"><a href="#什么是闭包？（含义较多，较难理解）。" class="headerlink" title="什么是闭包？（含义较多，较难理解）。"></a>什么是闭包？（含义较多，较难理解）。</h3><p>回调函数，预定义</p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;什么是闭包？（含义较多，较难理解）。&quot;&gt;&lt;a href=&quot;#什么是闭包？（含义较多，较难理解）。&quot; class=&quot;headerlink&quot; title=&quot;什么是闭包？（含义较多，较难理解）。&quot;&gt;&lt;/a&gt;什么是闭包？（含义较多，较难理解）。&lt;/h3&gt;&lt;p&gt;回调函数，预
+      
     
     </summary>
     
