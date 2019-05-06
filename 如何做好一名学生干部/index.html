@@ -1,68 +1,25 @@
-extends base
-
-block title
-  title= page.title + ' | ' + config.title
-
-block content
-  .post
-    h1.post-title= page.title
-    .post-meta= page.date.format('ll')
-      if page.categories.length > 0
-        span= ' | '
-        span.category
-          for category in page.categories.toArray()
-            a(href=url_for(category.path))= category.name
-      if theme.busuanzi == true
-        script(src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js', async)
-        span#busuanzi_container_page_pv= ' | '
-          span#busuanzi_value_page_pv
-          span= ' ' + __('Hits')
-      if theme.wordcount == true
-        include _partial/wordcount.pug
-    if theme.disqus
-      a.disqus-comment-count(data-disqus-identifier=page.path, href=url_for(page.path) + '#disqus_thread')
-    if theme.changyan
-      a.ds-thread-count(href=url_for(page.path) + '#SOHUCS')
-        span#changyan_count_unit(style='font-size: 15px; color: #6E7173;') 0
-        span= ' ' + __('Comment')
-      script(src='https://assets.changyan.sohu.com/upload/plugins/plugins.count.js', async)
-    if theme.valine.enable
-      a.disqus-comment-count( href=url_for(page.path) + '#vcomment')
-        span.valine-comment-count(data-xid=url_for(page.path))
-        span= ' ' + __('Comment')
-    if page.toc
-      div(class='clear')
-        div(id='toc' class='toc-article')
-          div(class='toc-title')= __('contents')
-          != toc(page.content, {list_number: theme.toc_number})
-    .post-content
-      != page.content
-    if theme.donate.enable == true
-      iframe(src='/donate/?AliPayQR=' + theme.donate.alipay_qr + '&WeChatQR=' + theme.donate.wechat_qr + '&GitHub=' + theme.donate.github + '&BTCQR=' + theme.donate.btc_qr + '&BTCKEY='+ theme.donate.btc_key + '&PayPal=' + theme.donate.paypal_url, style='overflow-x:hidden; overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;', frameborder='0', scrolling='no')
-
-    if theme.post_copyright.enable == true && page.copyright != false
-      div
-        ul.post-copyright
-          li.post-copyright-author
-            strong= __('copyright_author_prefix')
-            = theme.post_copyright.author
-          li.post-copyright-link
-            strong= __('copyright_link_prefix')
-            a(href='/' + page.path)= page.permalink
-          li.post-copyright-license
-            strong= __('copyright_declare_prefix')
-            if theme.post_copyright.copyright_text
-              != theme.post_copyright.copyright_text
-            else
-              != __('copyright_default_text')
-      br
-
-    if theme.shareto == true
-      script(type='text/javascript', src=url_for(theme.js) + '/share.js' + '?v=' + theme.version, async)
-      a.article-share-link(data-url=page.permalink, data-id=page._id, data-qrcode=qrcode(page.permalink))= __('shareto')
-
-    include _partial/tag.pug
-    include _partial/post_nav.pug
-
-    if page.comments
-      include _partial/comments.pug
+<!DOCTYPE html><html lang="zh-Hans"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>如何做好一名学生干部 | Sobin wang's Notes</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.0/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">如何做好一名学生干部</h1><a id="logo" href="/.">Sobin wang's Notes</a><p class="description">个人站，涉及前端知识共享、学习、备课笔记、随笔等</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> Start</i></a><a href="/archives/"><i class="fa fa-archive"> Archiv</i></a><a href="/about/"><i class="fa fa-user"> Über</i></a><a href="/atom.xml"><i class="fa fa-rss"> RSS</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">如何做好一名学生干部</h1><div class="post-meta">Nov 15, 2018</div><div class="post-content"><h1 id="做学生干部，态度是第一位的"><a href="#做学生干部，态度是第一位的" class="headerlink" title="做学生干部，态度是第一位的"></a>做学生干部，态度是第一位的</h1><h2 id="先和大家沟通几种常见的学生干部的不良态度。"><a href="#先和大家沟通几种常见的学生干部的不良态度。" class="headerlink" title="先和大家沟通几种常见的学生干部的不良态度。"></a>先和大家沟通几种常见的学生干部的不良态度。</h2><p><strong>一、激进严厉型</strong></p>
+<p>这种类型的学生干部一般以集体为重,将工作摆首位,个人利益放在最后,对工作也非常负责任。他们往往像一些企业家对待下属那样“只问结果,不问原因”地对待同学,从不关心也从不考虑同学的心理反映及接受情况,以自己的标准去要求别人,稍有违反其标准时,就机关枪式地开火这个不关心集体,指责那个不求上进,让人接受不了。</p>
+<p>要知道,每一个大学生都有自己的人生观,有自己的喜恶有自己的思想感情,更有强烈的自尊心,何况大学校园不比军队,学生干部与同学之间没有上级与下级,命令与服从的关系可言.持这种态度的干部,在工作中应摆正自己的位置,注意工作的方式方法,平衡好关系,协调一致为一个目标共同进步,切则使同学们敬畏而远之.</p>
+<p><strong>二、菩萨心肠型</strong></p>
+<p>这刚好与第一种态度相反,他们视天时不如地利,地利不如人和,为至理名言,通常以同学的喜怒哀乐为重,班上有哪位同学病了或有什么心事都了如指掌.用关怀备至来形容并不过分,这有值得我们赞赏的地方,但时常我们作无原则的退让,作无原则的老好人,这就不明智拉.例如平时同学没来上课,若老师不过门登记本上永远是全勤的,而待老师检查人数时才毫无头绪地说有事或请假,.这样虽一时博得当事人的好感,但负面效果却十分严重,那只会增长了他们的惰性,令补考人次,违纪现象增多再如对劳动课不参加劳动的学生进行姑息,以至综合测评是出现了不参加劳动的得了个良,参加劳动的反而得了个中的不公平现象,引起同学的强烈不满,这些的直接后果是会出现的班纪涣散,人心浮躁,班风不振,于是,直接影响一个班集体同学之间的团结,生活,学习.正所谓老好人,老好人,老到死也成不了好人。</p>
+<p><strong>三、不左不右的中间派</strong></p>
+<p>所谓中间派是做什么都不打紧,对工作既不求先进也不会最后,对同学不要求团结也不搞分裂,排名一般过得去就行了,这种类型的学生信奉中庸之道的至理名言,害怕树大招风.<br>他们认为求先进是爱出风头太落后又会被认为是不负责,干脆来个平平淡淡就是真.以致失去了许多锻炼自己.服务他人的机会,令大学生活留下一份遗憾.</p>
+<p><strong>四、自私自利的笑口常开型</strong></p>
+<p>这种类型的学生干部通常被认为只要搞好学习并能博得老师的信任就是万事大吉.因此他们既不关心集体也不关心他人.只为了个人的利益而发展.为了达到个人目的,他们一般嘴巴勤快脚踏实地.遵循同学背后小报告老师面前争功劳的原则.通俗一点说是比较圆滑世故,同学面前尽说好话,让每一个人相信这个干部不错,而在老师面前且加工汇报,以最佳方式表现自己和贬低一个即将超越自己的同学.另外,这种干部劳动时通常”脚踏实地,”两手挥动一派指挥家的风度.或许他们会一时”哗众取宠,”然而路遥知马力,日久见人心,这样的工作态度只会将自己推到孤立无援的境地.且最令人啐唾.</p>
+<p>总的来说,做好学生干部工作确实不容易,这首先需要学生干部自身修养过关,且大环境中每一个人要共同努力.共同营造好的学习.工作.生活氛围</p>
+<h2 id="如何培养正确的工作态度？"><a href="#如何培养正确的工作态度？" class="headerlink" title="如何培养正确的工作态度？"></a>如何培养正确的工作态度？</h2><p>龟兔赛跑的故事想必大家都非常熟悉了，擅长奔跑的兔子为什么输掉了比赛？显而易见的是能力没有问题，但是态度出现了问题。这其实涉及一个非常严肃的大话题，知识、能力、素质、态度谁更重要。 </p>
+<p>美国西北大学理事会主席兼心理学博士史各特说：“决定成功与失败的原因，态度比能力更重要。”哈佛大学的一项研究表明：成功、成就、升迁等原因的85%是因为我们的态度，而仅有15%是由于我们的专门技术。所以我们可以把结论先放在这里：态度&gt;素质&gt;能力&gt;知识。</p>
+<p><strong>最关键的问题是，如何培育我们的态度？</strong></p>
+<p><em>第一就是树立责任意识</em></p>
+<p>有责任的人就不会患得患失，更不会牢骚满腹。责任意识的检验标准就是的态度的积极与否。有责任感的大学生不会抱怨被大学上，自然也就不会被就业（没有为大学开脱的想法）。<br>做学生干部，首要的就是责任意识，其实做学生干部时往往有失无得，需要投入时间、精力和情感，换来的是不解、嫉妒甚至是白眼。然而投入的带着责任感的做完学生干部后，你将会发现自己有得无失。你会读懂什么是阳光总在风雨后。<br>其实我们年轻人最缺的就是责任意识，少了一点承担责任的勇气。非常有意思的是没有责任意识的人永远都有足够多的借口。</p>
+<p><em>第二就是培养务实作风</em></p>
+<p>西方有一句名言，“听过的我会忘记，看过的我能记得，做过的我才理解”。学生干部的锻炼完全取决于实践，和你的投入永远成正比。学生干部的价值只是给了你一个舞台，你是这个舞台的编剧和导演和演员，我们辅导员老师不过是建筑工而已。<br>我非常喜欢一句话：播种行为，收获习惯；播种习惯，收获性格；播种性格，收获命运。也就是说，人的命运是由他的行为决定的，要把握自己的命运，就要学会立刻行动，把态度落实在工作上。记住布置不等于完成，简单不等于容易，知道更要做到。</p>
+<p><em>第三就是注重细节，学会慎独</em></p>
+<p>人不能改变过去，但可以改变现在；人不能改变别人，但可以改变自己；人不能改变环境，但可以改变态度；人不能样样顺利，但可以事事尽心。</p>
+<p>要学会用100％的热情去做1％的事情，只有尽职尽责才能尽善尽美。</p>
+<p>最后用一句话与各位共勉：</p>
+<blockquote>
+<p>岁月本长而忙者自促；天地本宽而卑者自隘；风花雪月本闲，而劳忧者自冗；</p>
+</blockquote>
+</div><div class="tags"><a href="/tags/随笔/">随笔</a></div><div class="post-nav"><a class="pre" href="/Javascript闭包的深入理解/">Javascript闭包的深入理解</a><a class="next" href="/hello-world/">Hello World</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://www.sobin.cn"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Kategorien</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"><a href="/tags/javascript/" style="font-size: 15px;">javascript</a> <a href="/tags/随笔/" style="font-size: 15px;">随笔</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Letzte</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/Javascript闭包的深入理解/">Javascript闭包的深入理解</a></li><li class="post-list-item"><a class="post-list-link" href="/如何做好一名学生干部/">如何做好一名学生干部</a></li><li class="post-list-item"><a class="post-list-link" href="/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/hexo多设备同步与版本控制实现/">hexo多设备同步与版本控制实现</a></li><li class="post-list-item"><a class="post-list-link" href="/html语法之超链接标签详解/">html语法之超链接标签详解</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Blogroll</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2019 <a href="/." rel="nofollow">Sobin wang's Notes.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
